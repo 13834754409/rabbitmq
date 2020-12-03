@@ -34,6 +34,7 @@ class RabbitmqApplicationTests {
              */
             channel.basicPublish("", "javaQueues", MessageProperties.PERSISTENT_TEXT_PLAIN, "这是第二条消息".getBytes());
             RabbitUtil.closeConnection(channel, connection);
+
         } catch (IOException e) {
             e.printStackTrace();
         }
