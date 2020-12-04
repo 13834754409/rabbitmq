@@ -1,0 +1,14 @@
+server:
+  port: 9292
+  servlet:
+    context-path: /rabbitmq
+spring:
+  rabbitmq:
+    host: 10.23.0.5
+    port: 5672
+    virtual-host: /yingx
+    username: admin
+    password: admin
+    listener:
+      simple:
+        prefetch: 1 # 每个消费者每次可以消费一个

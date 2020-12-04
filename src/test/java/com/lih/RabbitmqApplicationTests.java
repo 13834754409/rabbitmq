@@ -52,7 +52,7 @@ class RabbitmqApplicationTests {
              * @param autoDelete 是否自动删除（没有连接自动删除） true:自动删除   false:不自动删除
              * @param arguments 队列的其他属性(构造参数)
              */
-            channel.queueDeclare("javaQueues",false,false,true,null);
+            channel.queueDeclare("javaQueues",true,false,true,null);
 
             //消费者消费消息
             /**消费者消费消息
